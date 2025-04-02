@@ -1,24 +1,23 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 export const Header = () => {
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                    <Link><img src="https://th.bing.com/th/id/OIP.JoTau08BSEDi3Qfi701hgwHaE8?rs=&pid=ImgDetMain"
-                    alt="The Simpsons" width={100} /></Link>
-                </div>
-                <div clasName="col">
-                    <ul>
-                        <li class="nav-item">
-                            <Link to="/" class="nav-link active">Home</Link>
-                        </li>
-                        <li class="nav-item">
-                            <Link to="/Family" class="nav-link">Family</Link>
-                        </li>
-                        <li class="nav-item">
-                            <Link to="/History" class="nav-link">History</Link>
-                        </li>
-                    </ul>
+        <div className="container py-5 bg-dark">
+            <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 mx-4 text-white text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bug" viewBox="0 0 16 16">
+                        <path d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A5 5 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A5 5 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623M4 7v4a4 4 0 0 0 3.5 3.97V7zm4.5 0v7.97A4 4 0 0 0 12 11V7zM12 6a4 4 0 0 0-1.334-2.982A3.98 3.98 0 0 0 8 2a3.98 3.98 0 0 0-2.667 1.018A4 4 0 0 0 4 6z" />
+                    </svg>
+                </a>
+
+                <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><Link to="/" class="nav-link px-2 text-secondary">Home</Link></li>
+                    <li><Link to="/About" class="nav-link px-2 text-white">About</Link></li>
+                    <li><Link to="/Projects" class="nav-link px-2 text-white">Projects</Link></li>
+                </ul>
+
+                <div className="text-end">
+                    <button type="button" className="btn btn-outline-light me-2">Login</button>
+                    <button type="button" className="btn btn-primary">Sign-up</button>
                 </div>
             </div>
         </div>
